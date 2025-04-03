@@ -1,11 +1,9 @@
-import Navbar from "./components/navbar/Navbar";
-import TopBar from "./components/topbar/TopBar";
+import Router from "./router/Router";
 
 const App = () => {
     return (
         <div>
-            <TopBar />
-            <Navbar />
+            <Router />
         </div>
     );
 };
