@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <Banner />
-            <div className="container flex flex-col gap-20 pt-10">
+            <div className='container flex flex-col gap-24 pt-10'>
                 <Today />
                 <Categories />
                 <Month />

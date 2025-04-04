@@ -22,18 +22,23 @@
     --button-hover: #e07575;
     --success: #00ff66;
     --golden: #ffad33;
+    --brown: #db4444;
     --yellow: #eeff61;
+    --black: #000;
     --red: #fb1314;
     --teal: #184a48;
     --backdrop: rgba(0, 0, 0, 0.446);
     --border: #ddd;
-    /* #A0BCE0 */
+    --login-primary: #cbe4e8;
+    --login-secondary: #a0bce0;
+    --card: #f5f4f4;
 }
 
 body {
     width: 100%;
     background: var(--background);
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 @keyframes fade-in {

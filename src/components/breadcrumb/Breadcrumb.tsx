@@ -1,24 +1,24 @@
 import { NavLink } from "react-router-dom";
 
 type BreadcrumbProps = {
-    customPaths: BreadcrumbPropsType[];
+    breadcrumbLinks: BreadcrumbPropsType[];
 };
 
-const Breadcrumb = ({ customPaths }: BreadcrumbProps) => {
-    const breadcrumbs = customPaths as BreadcrumbPropsType[];
+const Breadcrumb = ({ breadcrumbLinks }: BreadcrumbProps) => {
+    const breadcrumbs = breadcrumbLinks as BreadcrumbPropsType[];
 
     return (
-        <nav className="text-sm">
-            <ul className="flex items-center gap-2">
+        <nav className='text-sm'>
+            <ul className='flex items-center gap-2'>
                 <li>
-                    <NavLink to="/" className="text-[var(--foreground-grey)]">
+                    <NavLink to='/' className='text-[var(--foreground-grey)]'>
                         Home
                     </NavLink>
                 </li>
                 {breadcrumbs.map((crumb, index) => (
-                    <li key={index} className="flex items-center gap-2">
+                    <li key={index} className='flex items-center gap-2'>
                         <span>/</span>
-                        <NavLink to={crumb.path}>{crumb.name}</NavLink>
+                        {crumb.name}
                     </li>
                 ))}
             </ul>
