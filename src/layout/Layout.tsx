@@ -7,7 +7,7 @@ import ScrollTop from "../components/scroll-top/ScrollTop";
 const Layout = () => {
     const { pathname } = useLocation();
     return (
-        <div className='flex flex-col justify-between min-h-screen'>
+        <div className="flex flex-col justify-between min-h-screen">
             <nav>
                 <TopBar />
                 <Navbar />

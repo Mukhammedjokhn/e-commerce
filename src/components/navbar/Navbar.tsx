@@ -6,25 +6,25 @@ const Navbar = () => {
     const links: NavbarLinksType[] = [
         {
             title: "Home",
-            path: "/"
+            path: "/",
         },
         {
             title: "Contact",
-            path: "/contact"
+            path: "/contact",
         },
         {
             title: "About",
-            path: "/about"
+            path: "/about",
         },
         {
             title: "Sign Up",
-            path: "/auth"
-        }
+            path: "/auth",
+        },
     ];
     return (
-        <div className='border-b border-[var(--border)] mt-10 pb-4 '>
-            <div className='container flex items-center justify-between'>
-                <Link to={"/"} className='font-bold text-2xl'>
+        <div className="border-b border-[var(--border)] mt-10 pb-4 ">
+            <div className="container flex items-center justify-between">
+                <Link to={"/"} className="font-bold text-2xl">
                     Exclusive
                 </Link>
 
