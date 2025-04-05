@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { User, LogOut, Star, Package2, XCircle } from "lucide-react";
 import ProfileButton from "./ProfileButton";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement | null>(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -36,7 +38,10 @@ const Profile = () => {
                     <ProfileButton
                         icon={<User />}
                         label="Manage My Account"
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => {
+                            setIsOpen(false);
+                            navigate("/account-setting");
+                        }}
                     />
                     <ProfileButton
                         icon={<Package2 />}

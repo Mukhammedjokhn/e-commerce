@@ -4,8 +4,8 @@ import AboutUsers from "./sections/AboutUsers";
 
 const About = () => {
     return (
-        <div className='container py-20'>
-            <Breadcrumb breadcrumbLinks={[{ name: "About", path: "" }]} />
+        <div className="container py-20">
+            <Breadcrumb breadcrumbLinks={[{ name: "About", path: "about" }]} />
 
             <AboutBanner />
             <AboutUsers />

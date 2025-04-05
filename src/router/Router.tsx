@@ -8,6 +8,7 @@ import Cart from "../pages/cart/Cart";
 import Checkout from "../pages/checkout/Checkout";
 import NotFound from "../pages/not-found/NotFound";
 import Home from "../pages/home/Home";
+import Account from "../pages/account/Account";
 
 const Router = () => {
     return (
@@ -20,6 +21,7 @@ const Router = () => {
                 <Route path="/wishlist" element={<Wishlist />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/checkout" element={<Checkout />} />
+                <Route path="/account-setting" element={<Account />} />
                 <Route path="/*" element={<NotFound />} />
             </Route>
         </Routes>
